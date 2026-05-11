@@ -1,0 +1,43 @@
+Section 1: Global Performance Evaluation
+---------------------------------------------------------------------------
+Evaluation Metric    | N-gram + SVM    | BertAA          | Variance (SVM - BERT)
+---------------------------------------------------------------------------
+Overall Accuracy     | 0.9741          | 0.8959          | +0.0782
+Macro-Averaged F1    | 0.9746          | 0.8927          | +0.0819
+Weighted F1          | 0.9736          | 0.8960          | +0.0776
+---------------------------------------------------------------------------
+Evaluation Context: 2238 test samples evaluated across 25 distinct author classes.
+
+Section 2: Granular Class-Level Analysis (F1-Score)
+---------------------------------------------------------------------------
+Class Identifier 1    | SVM: 0.9950 | BERT: 0.9596 | Superior Model: N-gram + SVM (+0.0354)
+Class Identifier 2    | SVM: 0.9733 | BERT: 0.8529 | Superior Model: N-gram + SVM (+0.1204)
+Class Identifier 3    | SVM: 0.9885 | BERT: 0.8941 | Superior Model: N-gram + SVM (+0.0944)
+Class Identifier 4    | SVM: 0.8729 | BERT: 0.7960 | Superior Model: N-gram + SVM (+0.0769)
+Class Identifier 6    | SVM: 0.9701 | BERT: 0.8276 | Superior Model: N-gram + SVM (+0.1425)
+Class Identifier 8    | SVM: 0.9447 | BERT: 0.7500 | Superior Model: N-gram + SVM (+0.1947)
+Class Identifier 9    | SVM: 0.9900 | BERT: 0.8792 | Superior Model: N-gram + SVM (+0.1108)
+Class Identifier 10   | SVM: 0.9746 | BERT: 0.9149 | Superior Model: N-gram + SVM (+0.0597)
+Class Identifier 11   | SVM: 0.9737 | BERT: 0.8919 | Superior Model: N-gram + SVM (+0.0818)
+Class Identifier 12   | SVM: 0.9800 | BERT: 0.9552 | Superior Model: N-gram + SVM (+0.0248)
+Class Identifier 13   | SVM: 0.9948 | BERT: 0.9485 | Superior Model: N-gram + SVM (+0.0464)
+Class Identifier 14   | SVM: 0.9849 | BERT: 0.8532 | Superior Model: N-gram + SVM (+0.1317)
+Class Identifier 15   | SVM: 0.9851 | BERT: 0.8676 | Superior Model: N-gram + SVM (+0.1175)
+Class Identifier 16   | SVM: 1.0000 | BERT: 0.7879 | Superior Model: N-gram + SVM (+0.2121)
+Class Identifier 17   | SVM: 0.9655 | BERT: 0.8683 | Superior Model: N-gram + SVM (+0.0972)
+Class Identifier 18   | SVM: 0.9901 | BERT: 0.9275 | Superior Model: N-gram + SVM (+0.0626)
+Class Identifier 19   | SVM: 0.9852 | BERT: 0.9447 | Superior Model: N-gram + SVM (+0.0405)
+Class Identifier 20   | SVM: 0.9950 | BERT: 0.9694 | Superior Model: N-gram + SVM (+0.0256)
+Class Identifier 21   | SVM: 0.9655 | BERT: 0.8889 | Superior Model: N-gram + SVM (+0.0766)
+Class Identifier 22   | SVM: 0.9802 | BERT: 0.9746 | Superior Model: N-gram + SVM (+0.0056)
+Class Identifier 23   | SVM: 0.9333 | BERT: 0.8827 | Superior Model: N-gram + SVM (+0.0507)
+Class Identifier 24   | SVM: 0.9610 | BERT: 0.9211 | Superior Model: N-gram + SVM (+0.0400)
+Class Identifier 25   | SVM: 0.9754 | BERT: 0.9000 | Superior Model: N-gram + SVM (+0.0754)
+Class Identifier 26   | SVM: 0.9950 | BERT: 0.9552 | Superior Model: N-gram + SVM (+0.0398)
+Class Identifier 27   | SVM: 0.9919 | BERT: 0.9076 | Superior Model: N-gram + SVM (+0.0843)
+---------------------------------------------------------------------------
+Aggregate Distribution of Superior Performance:
+  N-gram + SVM: Superior in 25 classes
+  BertAA: Superior in 0 classes
+  Comparable Performance Observed: 0 classes
+---------------------------------------------------------------------------
